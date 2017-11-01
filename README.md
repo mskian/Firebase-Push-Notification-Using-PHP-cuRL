@@ -1,4 +1,4 @@
-# Firebase Push Notification Using PHP cuRL
+# Firebase Push Notification Using PHP cURL
 
 Send Firebase Push Notification via PHP cURL
 
