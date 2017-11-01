@@ -1,11 +1,12 @@
 <?php
 
 // Server key from Firebase Console
-define( 'API_ACCESS_KEY', 'YOUR FIREBASE CLOUD MESSAGING API KEY' );
+define( 'API_ACCESS_KEY', 'YOUR FIREBASE CLOUD MESSAGING API KEY' ); // Replace it with your Firebase Cloud Messaging server Key
 
 if($_SERVER["REQUEST_METHOD"] == "POST")
 {
 
+// POST values
 $token= $_POST["token"];
 $title= $_POST["title"];
 $message= $_POST["message"];
@@ -17,7 +18,7 @@ $data = array(
 "notification" => array( 
 "title" => "$title", 
 "body" => "$message", 
-"icon" => "https://example.com/icon.png", 
+"icon" => "https://example.com/icon.png", // replace it with your PUSH ICON URL
 "click_action" => "$postlink")
 );
 
@@ -41,7 +42,7 @@ curl_setopt( $ch,CURLOPT_HTTPHEADER, $headers );
 curl_setopt( $ch,CURLOPT_RETURNTRANSFER, true );
 curl_setopt( $ch,CURLOPT_POSTFIELDS, $data_string);                                                                  
                                                                                                                      
-// Variable for Print Result
+// Variable for Print the Result
 $result = curl_exec($ch);
 
 curl_close ($ch);
@@ -214,7 +215,7 @@ textarea.parsley-error:focus {
 <div class="col-lg-6 col-lg-offset-3 text-center">
 <?php
 if(isset($_POST['token'])) {
-//Print Result 
+// Display Output
 echo "<p>&nbsp;</p>";
 echo "<pre>$result</pre>";
 echo "<pre>The Json Data : $data_string</pre>";
