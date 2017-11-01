@@ -2,7 +2,7 @@
 
 Send Firebase Push Notification via PHP cURL
 
-<center><img src="https://raw.githubusercontent.com/mskian/Firebase-Push-Notification-Using-PHP-cuRL/master/frbse-push-pcurl1.png" width="377" height="667" alt="firebase push" /></center>
+<p align="center"><img src="https://raw.githubusercontent.com/mskian/Firebase-Push-Notification-Using-PHP-cuRL/master/frbse-push-pcurl1.png" width="377" height="667" alt="firebase push" /></p>
 
 - PHP cURL
 - POST Method
