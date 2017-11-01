@@ -1,7 +1,7 @@
 <?php
 
 // Server key from Firebase Console
-define( 'API_ACCESS_KEY', 'YOUR FIREBASE CLOUD MESSAGING API KEY' ); // Replace it with your Firebase Cloud Messaging server Key
+define( 'API_ACCESS_KEY', 'YOUR FIREBASE CLOUD MESSAGING API KEY' ); // Replace YOUR FIREBASE CLOUD MESSAGING API KEY with your Firebase Cloud Messaging server Key
 
 if($_SERVER["REQUEST_METHOD"] == "POST")
 {
@@ -18,7 +18,7 @@ $data = array(
 "notification" => array( 
 "title" => "$title", 
 "body" => "$message", 
-"icon" => "https://example.com/icon.png", // replace it with your PUSH ICON URL
+"icon" => "https://example.com/icon.png", // Replace https://example.com/icon.png with your PUSH ICON URL
 "click_action" => "$postlink")
 );
 
